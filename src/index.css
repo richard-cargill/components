@@ -1,0 +1,67 @@
+html,
+body {
+  box-sizing: border-box;
+}
+
+* { 
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+#root > div {
+  display: flex;
+}
+
+.navigation {
+  padding: 1rem 1rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation li {
+  margin-bottom: .5rem;
+}
+
+.example {
+  padding: 1rem;
+  background-color: gainsboro;
+}
+
+.componentpage {
+  padding: 1rem;
+}
+
+.componentpage *:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.props {
+  border-collapse: collapse;
+}
+
+.props th {
+  text-align: left;
+  padding: .5rem .5rem .5rem 0;
+  border-bottom: 1px solid black;
+}
+
+.props td {
+  padding: .5rem .5rem .5rem 0;
+  border-bottom: 1px solid gainsboro;
+}
+
+.props td + td + td {
+  text-align: center;
+}
